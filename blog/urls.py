@@ -1,8 +1,8 @@
 from django.urls import path
-
-from blog.views import index, ola #nesta linha importamos as functions views.
+from blog.views import index, ola
 
 urlpatterns = [
-    path('index/', index, name = "index"), #defina a rota /index
-    path('ola/', ola, name="ola") #Define a rota /ola
+    path('', index, name= "home"),
+    path('index/', index, name= "index"),
+    path('ola/', ola, name= "ola")
 ]
